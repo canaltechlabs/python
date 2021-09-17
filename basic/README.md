@@ -51,11 +51,11 @@ Mostrando o tipo da variável
 print(type(nome))
 ````
 
-## Python não é fortemente tipado
+# Python não é fortemente tipado
 
 Diferente de algumas linguagens o Python não é fortemente tipado ou seja, não definimos o tipo de variável, o tipo de variável é definido na hora da atribuição
 
-```python
+```python   
 numero = 10
 print(type(numero))
 
