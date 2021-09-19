@@ -40,7 +40,7 @@ Um software que recebe o nome e sobre nome e exibe na tela
 ```python
 print("Seu nome completo")
 nome = input("Digite seu primeiro nome: ")
-sobrenome = input("Digite seu sobre nome: ")
+sob renome = input("Digite seu sobre nome: ")
 nome_completo = nome + " " + sobrenome
 print(sobrenome)
 ```
