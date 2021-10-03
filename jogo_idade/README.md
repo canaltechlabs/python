@@ -1,4 +1,4 @@
-# O Básico de Python com comparações
+# O Básico de Python com um Jogo
 
 Quero com uma lógica de comparações fazer condicionais e laços de repetições
 
@@ -84,3 +84,69 @@ print("Fim de jogo!")
 
 Aqui nós, convertemos o palpite em um número inteiro e depois comparamos se ele digitou um número maior, menor ou igual. E adicionamos uma mensagem de fim de jogo.
 
+## Programa só termina quando acertar
+
+Agora, vamos usar a lógica do laço while, para que o programa só termine quando acertar a idade, vimos que já temos a dica de quando o valor é menor ou maior então a gente consegue chegar mais facilmente no valor correto da idade.
+
+Vamos importa a biblioteca "time", para usar a função sleep pro nosso código ficar bem legal.
+
+```python
+import time
+```
+
+Depois criaremos um laço while em nosso código
+
+```python
+while (igual != True):
+```
+
+Para que a gent consiga ver o que está acontecendo adicionaremos um sleep e limpamos a tela para fazer uma nova tentativa.
+
+```python
+time.sleep(3)
+system("clear")
+```
+
+Deixe o print fora do laço para mostrar que o jogo terminou
+
+```python
+print("Parabéns e fim de jogo!")
+```
+
+Aqui aprendemos de uma forma simples a usar o laço while.
+
+Agora o código completo fica assim:
+
+```python
+from os import system
+import time
+system("clear")
+
+nome = "Renato"
+idade = 37
+igual = 0
+
+while (igual != True):
+    time.sleep(3)
+    system("clear")    
+    print("#" * 39)
+    print("# Vamos adivinhar a idade do {} ? #".format(nome))
+    print("#" * 39)
+
+    palpite = input("Digite seu palpite sobre a idade: ")
+
+    palpite = int(palpite)
+    igual = palpite == idade
+    maior = palpite > idade
+    menor = palpite < idade
+
+
+    if (igual):
+        print("Você acertou")
+    elif (maior):
+        print("O número é maior que a idade!")
+    elif (menor):
+        print("O número é menor que a idade!")
+
+print("Parabéns e fim de jogo!")
+```
