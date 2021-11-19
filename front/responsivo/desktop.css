@@ -1,0 +1,15 @@
+body {
+    background-color: aqua;
+}
+
+.mobile,.tablet {
+    display: none;
+}
+
+/*.btn {
+    color: black;
+}
+
+button {
+    color: chocolate;
+}*/
